@@ -78,16 +78,16 @@ function RegistrationForm() {
 		) {
 			var formData = {};
 			Object.assign(formData, {
-				firstName: firstName,
-				lastName: lastName,
-				gender: gender,
-				dob: dob,
-				email: email,
-				phone: phone,
-				fatherName: fatherName,
-				motherName: motherName,
-				emgContNo: emgContNo,
-				emgContRel: emgContRel
+				firstName: firstName.trim(),
+				lastName: lastName.trim(),
+				gender: gender.trim(),
+				dob: dob.trim(),
+				email: email.trim(),
+				phone: phone.trim(),
+				fatherName: fatherName.trim(),
+				motherName: motherName.trim(),
+				emgContNo: emgContNo.trim(),
+				emgContRel: emgContRel.trim()
 			});
 			localStorage.setItem('employeeData', JSON.stringify(formData));
 			sessionStorage.setItem('successMsg', "Registration successfull :)");
@@ -360,7 +360,7 @@ function RegistrationForm() {
                 </div>
             </div>
             </Form.Group>
-            <Button className="mb-3" type="submit">Submit form</Button>
+            <Button className="mb-3" type="submit">Register</Button>
             </Form>
             </div>
         </div>
