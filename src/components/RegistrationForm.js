@@ -354,7 +354,7 @@ function RegistrationForm() {
 					defaultValue=""
 					onChange={handleChange}
                     />
-                    <Form.Control.Feedback type="invalid">Please enter your emergency contact relation.!</Form.Control.Feedback>
+                    <Form.Control.Feedback type="invalid">Please enter your emergency contact relation!</Form.Control.Feedback>
 					<Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                 </InputGroup>
                 </div>
